@@ -3,8 +3,7 @@
 
 <section id="main">
     {{outlet}}
-
-    <input type="checkbox" id="toggle-all">
+    {{input type="checkbox" id="toggle-all" checked=allAreDone}}
 </section>
 
 
@@ -24,7 +23,7 @@
         </li>
     </ul>
 
-    <button id="clear-completed">
-        Clear completed(1)
+    <button id="clear-completed" {{action "clearCompleted"}}>
+        Clear completed({{completed}})
     </button>
 </footer>
